@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenida</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: linear-gradient(to bottom, #1e3c72, #2a5298); /* tonos azules */
+      color: white;
+    }
+
+    header {
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    .contenedor {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px 20px;
+      flex-wrap: wrap;
+    }
+
+    .cuadro {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 40px 20px;
+      width: 200px;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    .cuadro:hover {
+      transform: scale(1.05);
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .cuadro h2 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    footer {
+      margin: 50px 0 20px 0;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>¡Bienvenida a mi página! Soy Estefani 💻</h1>
+    <p>Explora un poco sobre mí dando clic en los cuadros de abajo</p>
+  </header>
+
+  <main class="contenedor">
+    <div class="cuadro" onclick="alert('Estoy cursando el 6to ciclo de la carrera de Ingeniería de Sistemas y Software 😊. Me gusta aprender y seguir mejorando cada día 🚀')">
+      <h2>Sobre mí</h2>
+    </div>
+
+    <div class="cuadro" onclick="alert('Mis metas son terminar la carrera, crecer como profesional en el área de TI y trabajar en proyectos que aporten soluciones innovadoras 💡')">
+      <h2>Metas</h2>
+    </div>
+
+    <div class="cuadro" onclick="alert('Puedes contactarme por correo: estefaniperez@gmail.com 📩 o a través de mis redes sociales 🌐')">
+      <h2>Contacto</h2>
+    </div>
+  </main>
+
+  <footer>
+    <p>Hecho por Estefani💙 </p>
+  </footer>
+</body>
+</html>
